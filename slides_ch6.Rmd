@@ -1,0 +1,263 @@
+---
+title: "Chapter 6 and SPSS Lab"
+author: "Sherri Verdugo"
+date: "September 17, 2014"
+output:
+  pdf_document:
+    highlight: espresso
+    toc: yes
+    toc_depth: 3
+  html_document:
+    highlight: espresso
+    theme: cosmo
+    toc: yes
+    toc_depth: 3
+  word_document: default
+---
+
+## Prologue and Introduction
+
+Tables. We are talking about generating tables that contain information for whatever we may have in front of us to investigate. We are focused on:
+  * Nominal and Ordinal Data
+  * Testing a hypothesized relationship (dyadic statement -- being a group of two)
+    * null 
+    * alternative
+  * Are two concepts related?
+
+In this chapter, we are focused on frequency counts and percentages by re-coding variables in a data set. Further, we are able to move between frequencies and percentages with ease using a few mathematical processes. This is done with the focus of who the intended audience is when we are constructing tables.
+
+This chapter is the first in determining relationships between variables mathematically. 
+
+ 
+
+## Key Concepts
+
+
+* Contingency Table, pg. 150
+    * Table that depicts a possible relationship between the independent variable and the dependent variable
+* Control Variable, pg. 165
+    * A third variable that may have an influence on the relationship between the first two variables
+* Spurious Relationship, pg. 166 
+    *Relationship between two variables that is the product of a common independent variable
+* Causal Models, pg. 172
+    * Schematic diagrams showing the independent, dependent, and control variables, and where appropriate, positing the flow of causation of change in the dependent variable
+* Antecedent Variable, pg. 173
+    * The variable initially leading to change in the dependent variable
+* Intervening Variable, pg. 173
+    * The variable through which the antecedent variable brings about change in the dependent variable
+
+
+## Contingency Tables 
+
+**Contingency Table**: A table that depicts a possible relationship between the independent and dependent variable.
+
+This is an exploration of data that allows us to see if a relationship exists between the variables. 
+
+Objectives: 
+  * Conceptual approach: we are going to work without a computer 
+  * Textbook examples for Chapter 6
+  * Use SPSS to generate contingency tables for larger data sets
+  * Understanding the dependent and independent variables
+  
+Visit http://www.mhhe.com/biosci/genbio/virtual_labs/BL_01/BL_01.html for an idea of how independent and dependent variables interact in a science setting.
+
+
+
+## Contingency Tables Continued
+
+A random set of 100 people who like Chocolate and Vanilla ice cream (this is entirely made up).
+
+Gender | Chocolate | Vanilla | Total
+-------|-----------|---------|-------
+Male   | 42        | 10      | 52
+Female | 9         | 39      | 48
+Total  | 51        | 49      | 100
+
+Here we see the totals for the columns and the rows.... The total for the columns and rows add up to 100 or the total of items in the cells. 
+
+By convention: the independent variable = columns and the dependent variable = rows
+
+
+
+## Regrouping Variables
+
+Sometimes, we have to reorganize or "regroup" the data. This is accomplished by:
+
+1. Using a standard that exists (some variables have standards for grouping)
+2. Based on our own preferences and priorities (not the optimal solution)
+3. Range method:
+    * look at the range (lowest to highest)
+    * create a frequency distribution
+    * reduce the number of categories to 3 or 4 at maximum
+    * categories are roughly equal
+
+
+
+## Step 1: Regrouping GDP 
+
+* page 153 of your textbook
+* GDP/Capita in thousands of dollars by divining the GDP by 1000
+
+GDP/Capita | Range   | f = 
+-----------|---------|-----
+Very High  | 30-35.2 | 2
+High       | 20-29.9 | 5
+Medium     | 10-19.9 | 3
+Low        | 1-9.9   | 6
+Very Low   | Below 1 | 4
+
+Again, we can reduce this to
+
+GDP/Capita | Range   | f = 
+-----------|---------|-----
+High       | 20-35.2 | 7
+Medium     | 10-19.9 | 3
+Low        | 1-9.9   | 6
+Very Low   | Below 1 | 4
+
+
+
+## Political Rights Frequency 
+
+From Page 154 in the text book
+
+Political Rights | Rank | f=
+-----------------|------|-----
+High             | 1    | 12
+Medium           | 2-3  | 2
+Low              | 4-5  | 3
+Very Low         | 6-7  | 3
+
+
+
+## Constructing the Contingency Table
+
+Frequency Method 
+
+                 | GDP/Capita
+Political Rights | High (20-35.2) | Medium (10.0-19.9) | Low (1.0-9.9) | Very Low (Below 1.0) | Total
+-----------------|----------------|--------------------|---------------|----------------------|------
+High (1)         | 7              | 3                  | 2             | 0                    | 12 
+Medium (2-3)     | 0              | 0                  | 1             | 1                    | 2
+Low (4-5)        | 0              | 0                  | 2             | 1                    | 3
+Very Low (6-7)   | 0              | 0                  | 1             | 2                    | 3
+TOTAL            | 7              | 3                  | 6             | 4                    | 20
+  
+
+
+
+## Generating Percentages
+
+* This method allows us to see relationships and interpret the table
+
+Example:
+
+freq.|freq.
+-----|-----
+8    | 15
+2    | 85
+
+In percentages we have:
+ 
+per | per 
+----|----
+80% | 15%  
+20% | 85%
+
+100 % is the result for both columns above
+
+ 
+
+## Percentages Continued
+
+1. Treat each cell as a percentage of the grand total
+2. Treat each cell as a percentage of the row total 
+3. Treat each cell as a percentage of the column total
+
+Table 6.4 Political Rights from page 158
+
+                 | GDP/Capita
+Political Rights | High (20-35.2) | Medium (10.0-19.9) | Low (1.0-9.9) | Very Low (Below 1.0) 
+-----------------|----------------|--------------------|---------------|----------------------
+High (1)         | 100%           | 100%               | 33.3%         | 0                     
+Medium (2-3)     | 0              | 0                  | 16.6%         | 25.0%                    
+Low (4-5)        | 0              | 0                  | 33.3%         | 25.0%                    
+Very Low (6-7)   | 0              | 0                  | 16.6%         | 50.0%                    
+TOTAL            | 100%           | 100%               | 99.8%         | 100.0%                    
+(n =)            | 7              | 3                  | 6             | 4
+
+* 99.8% due to rounding errors
+
+
+
+
+## Interpreting Contingency Tables
+
+When we interpret the tables, we are looking for a pattern that we can use to investigate the relationship between the independent and dependent variable. 
+
+Linear relationships: direct proportionality that creates a straight line. In a linear relationship, a change in an independent variable will always produce a corresponding change in the dependent variable.
+
+Can be a positive (as one goes up the other goes up) or inverse (as one goes up or down the other does the opposite).
+
+Clustering in the off diagonal indicates an inverse relationship. (page 164)
+
+*Example on page 160* 
+
+
+
+## Controlling for a Third Variable and Spurious Relationships
+
+Control Variable: A third variable that may have an influence on the relationship between the two variables. This has two outcomes:
+  1. The control variable has no impact on the initial relationship
+  2. The presence of the control variable changes the initial relationship or is necessary for there to be a relationship between the independent and dependent variables.
+
+Spurious Relationship: A relationship between two variables that is the product of a common independent variable.
+
+Example: Could heat be a control variable in this classroom? How can we work with this in a scientific setting?
+
+
+
+## Controlling for Heat and Performance in a Classroom
+
+* Heat can be controlled for (by turning the a.c. on or off...by adding heaters in the classroom)
+* Does too much heat impact your ability to concentrate
+* Does too much cold impact your ability to concentrate
+* We can measure your performance on a test, quiz, or assignment in the following way: extreme heat, normal temperature, and extreme cold :)
+
+Can we create a contingency table and collect the data in the classroom?
+
+
+
+## Causal Models
+
+Causal models: schematic diagrams showing the independent, dependent, and control variables, and where appropriate, positing the flow of causation of change to the dependent variable.
+
+http://en.wikipedia.org/wiki/Computational_sociology <- We are able to use the same techniques in sociology if we are willing to learn the techniques. Most of these fall outside of the scope for this class...but it is available and worth the effort.
+
+Antecedent variable: the variable initially leading to change in the dependent variable.
+
+Intervening Variable: the variable through which the antecedent variable brings about change in the dependent variable.
+
+Let's look at Figure 6.6 Page 174 in your text book.
+
+Further, we can visit this site: http://faculty.ucr.edu/~hanneman/soc203a/diagram.html
+
+
+
+## Computer Applications and Conclusions
+
+In this class we are using a combination of SPSS and Excel. Sometimes we will use other forms of data. 
+
+Page 175 starts a brief discussion on some of the applications available for computers (mostly PC based).
+
+** This chapter is the introduction to statistical inference...we are starting to think in terms of outcome variables and expectations. Don't forget this chapter...it will be handy in the future.
+
+
+
+## Next Week
+
+* Recap of previous weeks
+* Chapter 7 -- Statistical Inference
+* SPSS lab: More SPSS and Excel interaction
+* Homework 1 is coming up (released this weekend or Monday at the latest)
+* Writing Draft (let's talk about what you want to analyze)
