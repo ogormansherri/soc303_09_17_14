@@ -96,7 +96,7 @@ Sometimes, we have to reorganize or "regroup" the data. This is accomplished by:
 ## Step 1: Regrouping GDP 
 
 * page 153 of your textbook
-* GDP/Capita in thousands of dollars by divining the GDP by 1000
+* GDP/Capita in thousands of dollars by dividing the GDP by 1000
 
 GDP/Capita | Range   | f = 
 -----------|---------|-----
